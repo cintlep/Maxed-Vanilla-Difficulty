@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "maxed-vanilla-difficulty",
+	"version": "${version}",
+	"name": "Maxed Vanilla Difficulty",
+	"description": "Sets regional and clamped regional difficulty to their max depending on world difficulty",
+	"authors": [
+		"cintlex"
+	],
+	"contact": {
+		"issues": "https://github.com/cintlep/Maxed-Vanilla-Difficulty/issues",
+		"sources": "https://github.com/cintlep/Maxed-Vanilla-Difficulty"
+	},
+	"license": "MIT",
+	"icon": "assets/maxed-vanilla-difficulty/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cintlex.mvd.MaxedVanillaDifficulty"
+		]
+	},
+	"mixins": [
+		"maxed-vanilla-difficulty.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.20.1",
+		"java": ">=17",
+		"fabric-api": ">=0.92.6+1.20.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
